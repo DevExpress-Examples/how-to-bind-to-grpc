@@ -29,8 +29,11 @@ namespace InfiniteAsyncSource.GRPC {
         } 
 
         async void AssignUsers() {
-            if(!IsInDesignMode)
-                Users = (await client.GetUsersAsync(new Empty())).Items.ToArray();
+            if(!IsInDesignMode) {
+                try {
+                    Users = (await client.GetUsersAsync(new Empty())).Items.ToArray();
+                } catch { }
+            }
         }
 
         [Command]
