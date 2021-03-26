@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+	<UseWindowsForms>True</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IssuesData\IssuesData.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v21.1">
+      <HintPath>..\..\..\..\..\..\Work\2021.1\Bin\NETCoreDesktop\DevExpress.Data.Desktop.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v21.1">
+      <HintPath>..\..\..\..\..\..\Work\2021.1\Bin\NETCoreDesktop\DevExpress.Data.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v21.1">
+      <HintPath>..\..\..\..\..\..\Work\2021.1\Bin\NETCoreDesktop\DevExpress.Mvvm.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v21.1.Core">
+      <HintPath>..\..\..\..\..\..\Work\2021.1\Bin\NETCoreDesktop\DevExpress.Printing.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v21.1">
+      <HintPath>..\..\..\..\..\..\Work\2021.1\Bin\NETCoreDesktop\DevExpress.Xpf.Core.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v21.1">
+      <HintPath>..\..\..\..\..\..\Work\2021.1\Bin\NETCoreDesktop\DevExpress.Xpf.Grid.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v21.1.Core">
+      <HintPath>..\..\..\..\..\..\Work\2021.1\Bin\NETCoreDesktop\DevExpress.Xpf.Grid.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v21.1.Extensions">
+      <HintPath>..\..\..\..\..\..\Work\2021.1\Bin\NETCoreDesktop\DevExpress.Xpf.Grid.v21.1.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

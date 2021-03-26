@@ -1,0 +1,75 @@
+syntax = "proto3";
+
+option objc_class_prefix = "HLW";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+package IssuesData;
+
+service IssuesService {
+  rpc FetchIssues (Fetch) returns (Issues);
+  rpc GetSummaries (IssueFilter) returns (IssueSummaries);
+  rpc GetUsers (Empty) returns (Users);
+  rpc UpdateIssue (Issue) returns (Empty);
+}
+
+message Empty {
+}
+
+message Fetch {
+  IssueSortOrder Sort = 1;
+  IssueFilter Filter = 2;
+  int32 skip = 3;
+  int32 take = 4;
+}
+
+message IssueFilter {
+  google.protobuf.Int32Value minVotes = 1; 
+  google.protobuf.Timestamp createdFromProto = 2;
+  google.protobuf.Timestamp createdToProto = 3;
+  google.protobuf.Int32Value priorityProto = 4; 
+}
+
+message Issue {
+  int32 id = 1;
+  string subject = 2;
+  int32 userId = 3;
+  google.protobuf.Timestamp createdProto = 4;
+  int32 votes = 5;
+  Priority priority = 6;
+}
+
+message Issues {
+   repeated Issue items = 1;
+}
+
+message User {
+  int32 id = 1;
+  string firstName = 2;
+  string lastName = 3;
+}
+
+message Users {
+  repeated User items = 1;
+}
+
+message IssueSummaries {
+  int32 count = 1;
+  google.protobuf.Timestamp lastCreatedProto = 2;
+}
+
+enum Priority {
+  PRIORITY_LOW = 0;
+  PRIORITY_BELOW_NORMAL = 1;
+  PRIORITY_NORMAL = 2;
+  PRIORITY_ABOVE_NORMAL = 3;
+  PRIORITY_HIGH = 4;
+}
+
+enum IssueSortOrder {
+  ISSUESORTORDER_DEFAULT = 0;
+  ISSUESORTORDER_CREATED_DESCENDING = 1;
+  ISSUESORTORDER_VOTES_ASCENDING = 2;
+  ISSUESORTORDER_VOTES_DESCENDING = 3;
+}
