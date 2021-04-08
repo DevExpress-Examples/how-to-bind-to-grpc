@@ -95,7 +95,7 @@ namespace InfiniteAsyncSource.GRPC {
 
         [Command]
         public void UpdateIssue(RowValidationArgs args) {
-            args.ResultAsync = UpdateIssueAsync((Issue)args.Row);
+            args.ResultAsync = UpdateIssueAsync((Issue)args.Item);
         }
         async Task<ValidationErrorInfo> UpdateIssueAsync(Issue issue) {
             await client.UpdateIssueAsync(issue);
