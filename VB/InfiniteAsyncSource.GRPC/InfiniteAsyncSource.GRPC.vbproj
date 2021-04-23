@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Wpf.Grid" Version="21.1.2-beta" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2019Colorful" Version="21.1.2-beta" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IssuesData\IssuesData.vbproj" />
+  </ItemGroup>
+</Project>
