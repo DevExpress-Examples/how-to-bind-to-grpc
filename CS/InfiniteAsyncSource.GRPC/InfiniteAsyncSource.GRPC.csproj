@@ -6,8 +6,8 @@
 	<UseWindowsForms>True</UseWindowsForms>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Wpf.Grid" Version="21.1.2-beta" />
-    <PackageReference Include="DevExpress.Wpf.Themes.Office2019Colorful" Version="21.1.2-beta" />
+    <PackageReference Include="DevExpress.Wpf.Grid" Version="21.1.3" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2019Colorful" Version="21.1.3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IssuesData\IssuesData.csproj" />
