@@ -10,7 +10,7 @@ This example demonstrates how to use the <a href="https://documentation.devexpre
 Follow the steps below to run the example:
 
 1. Build the projects in the solution.
-2. Start the test server. To do this, run the following .exe file: `\how-to-bind-to-grpc\InfiniteAsyncSource.GRPC\IssuesData.Server\bin\Debug\netcoreapp3.1\IssuesData.Server.exe`.
+2. Start the test server. To do this, run the following .exe file: `\how-to-bind-to-grpc\CS\IssuesData.Server\bin\Debug\netcoreapp3.1\IssuesData.Server.exe`.
 3. Run the `InfiniteAsyncSource.GRPC` project in Visual Studio.
 
 For information on how to use virtual sources, refer to the following tutorial: [How to Use Virtual Sources](https://docs.devexpress.com/WPF/120194/controls-and-libraries/data-grid/bind-to-data/bind-to-any-data-source-with-virtual-sources/how-to-use-virtual-sources).
