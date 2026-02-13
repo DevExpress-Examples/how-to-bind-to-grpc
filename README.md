@@ -19,7 +19,7 @@ For information on how to use virtual sources, refer to the following tutorial: 
 #### Note:
 > This example does not have a VB implementation because Visual Basic is not supported by gRPC (see: [Supported languages](https://grpc.io/docs/languages/)).
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=how-to-bind-to-grpc&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=how-to-bind-to-grpc&~~~was_helpful=no)
 
