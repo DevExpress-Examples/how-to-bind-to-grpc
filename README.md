@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# How to Bind Data Grid to a gRPC Service
+# WPF Data Grid - Bind Data Grid to a gRPC Service
 
 This example demonstrates how to use the <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.Data.InfiniteAsyncSource.class">InfiniteAsyncSource</a> to bind the <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl.class">GridControl</a> to a <a href="https://grpc.io/">gRPC</a> service.
 
